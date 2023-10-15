@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rules</title>
+  <link href="css/rules.css" rel="stylesheet" type="text/css" />  
+</head>
+<body>
+  <nav class="flex align-center">
+    <p><span>Game</span>Card</p>
+    <ul>
+      <li class="big-screens">
+      <a href="index.html">Inicio</a>
+      <a href="rules.html">Reglas</a>
+      <a href="game.html">Juego</a>
+      <button class="btn register" id="registerButton">Register</button>
+      <button class="btn login" id="loginButton">Log In</button>    
+      </li>
+      <li class="small-screens">
+      <i class="fa-solid fa-bars"></i>
+      </li>
+    </ul>
+    </nav>
+    <h1> Reglas</h1>
+    <div>
+        <ul>
+            <li>El Blackjack se juega en base a un sistema de puntos que hace corresponder cada carta de la baraja con un valor numérico determinado.</li>
+            <li>21 es el mejor valor numérico posible que puede obtenerse, y los jugadores deben afanarse para aproximarse lo más que puedan a dicha cifra, sin pasarse, ya que entonces perderían.</li>
+            <li>Aquellos que sumen 21 puntos con solo 2 cartas tendrán "Blackjack" y ganarán automáticamente la mano y se les pagará 3:2 sobre la apuesta.</li>
+            <li>A aquellos que venzan la mano del crupier también se les pagará, esta vez el doble de su apuesta inicial, siempre que sumen un número igual o menor a 21.</li>
+            <li>Si el crupier se pasa, también se le pagará una cantidad equivalente a todos los jugadores que a su vez no se hayan pasado de esa cifra.</li>
+            <li>Sin embargo, si al crupier se le reparte Blackjack, todos los jugadores pierden automáticamente, independientemente de las cartas que tengan.</li>
+            <li>La única manera de que un jugador no pierda la apuesta cuando el crupier tenga esta jugada es que su mano también sume 21 puntos, es decir, que haga Blackjack.</li>
+        </ul>          
+    </div>
+
+    <h1> Información</h1>
+    <div>
+        <ul>
+            <li>Cada carta numerada del 2 al 10 (2, 3, 4, 5, 6, 7, 8, 9, 10) tendrá un valor idéntico a su valor numérico.</li>
+            <li>Las figuras (Jotas, Reinas y Reyes) valen todas 10 puntos.</li>
+            <li>Los Ases pueden valer tanto 1 como 11 puntos, según lo que sea más conveniente para una mano en particular. Por ejemplo, un As y una figura equivalen a Blackjack automático, y al jugador se le pagará 3:2 sin más demora.</li>
+          </ul>          
+    </div>
+    <div>
+      <button type="button" onclick="window.open('index.html','_self')">
+        <h2>Inicio</h2>
+      </button>
+    </div>
+    <script>
+      document.getElementById("loginButton").addEventListener("click", function() {
+          window.location.href = "login.html";
+      });
+  </script> 
+</body>
+</html>

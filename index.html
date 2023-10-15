@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>BlackJack</title>
+	</head>
+	<body>
+        <nav class="flex align-center">
+            <p><span>Game</span>Card</p>
+            <ul>
+              <li class="big-screens">
+              <a href="index.html">Inicio</a>
+              <a href="rules.html">Reglas</a>
+              <a href="game.html">Juego</a>
+              <button class="btn register" id="registerButton">Register</button>
+              <button class="btn login" id="loginButton">Log In</button>
+             
+              </li>
+              <li class="small-screens">
+              <i class="fa-solid fa-bars"></i>
+              </li>
+            </ul>
+            </nav>
+            <main>
+                <div class="info-container">
+                  <div class="info-title">Información sobre el juego Uno</div>
+                    <div class="info-text">
+                        Los orígenes del blackjack no están totalmente claros, aunque la mayoría de historiadores coinciden en que deriva del “vingt-et-un” (veinte y uno o simplemente veintiuno).
+                        Todo empezó en los casinos franceses sobre el año 1700. Las reglas del vingt-et-un diferían de las del actual blackjack. El objetivo del juego consistía en alcanzar 21 puntos con las cartas (de baraja francesa) que recibía el jugador. Sin embargo, las apuestas se realizaban tras (no antes) recibir la primera. El croupier tenía la opción de doblar las apuestas de todos los jugadores tras ver su primera carta. Además, si el croupier lograba sumar 21 puntos, los jugadores debían pagarle el triple de sus apuestas iniciales. A pesar de todo ello, las reglas del blackjack actual todavía se basan en este juego...
+                    </div>
+                    <br>
+                  </div>
+                </div>
+                <div class="centered-container">
+                  <div id="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=1aqWKlOaPpA&pp=ygUTanVlZ28gZGVsIGJsYWNramFjaw%3D%3D" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </main>
+              <script>
+                document.getElementById("loginButton").addEventListener("click", function() {
+                    window.location.href = "login.html";
+                });
+            </script> 
+	</body>
+</html>
